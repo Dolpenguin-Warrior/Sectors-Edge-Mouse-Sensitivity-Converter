@@ -1,3 +1,15 @@
+/* Text Formatting */
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+
 /* Dropdown Button */
 
 .dropbtn {
