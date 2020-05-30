@@ -1,1 +1,1 @@
-# Sectors Edge-Mouse Sensitivity Converter
+# Sectors Edge Mouse Sensitivity Converter
