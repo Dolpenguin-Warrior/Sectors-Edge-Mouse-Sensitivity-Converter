@@ -6,27 +6,43 @@
 </head>
 
 <body>
+
+
+    <!-- sensitivity = sqrt((6.28 * inches * dpi * 0.003) / 360) -->
     <h1>Sectors Edge Sensitivity Converter</h1>
     <p>Message Dolpenguin on discord if a game that you need to convert from is not here!</p>
-    <a href="https://sectorsedge.com"> The Official Website </a> <br>
-    <a href="https://discordapp.com/invite/87NvZhn"> The Official Discord </a> <br>
-
-    <div class="dropdown">
-        <button class="dropbtn">Game</button>
-        <div class="dropdown-content">
-            <a href="#">Paladins</a>
-            <a href="#">CSGO</a>
-            <a href="#">Apex Legends</a>
-        </div>
+    <div class="topLink">
+        <a href="https://sectorsedge.com"> The Official Website </a>
+        <a href="https://discordapp.com/invite/87NvZhn"> The Official Discord </a>
     </div>
 
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
+    <div class="dropdown">
+        <button id="gameSelect" class="dropbtn">Game</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="javascript:setDropdown('Paladins')">CSGO</a>
+            <a href="#" onclick="javascript:setDropdown('Paladins')">CSGO</a>
+            <a href="#" onclick="javascript:setDropdown('Paladins')">CSGO</a>
+        </div>
+    </div> <br><br>
+    <script>
+        function setDropdown(valueToSet) {
+            document.getElementById("gameSelect ").innerText = valueToSet;
+            document.getElementById("gameSelect ").innerText = valueToSet;
+        }
+
+        function calculateSens() {
+            document.getElementById("outputSensitivity ").innerText = "Johnny Bravo ";
+        }
+    </script>
+    <form onsubmit="javascript:calculateSens() ">
+        <label for="sens ">Sensitivity:</label>
+        <input type="text " id="sens " name="sens "><br><br>
+        <label for="dpi ">DPI:</label>
+        <input type="text " id="dpi " name="dpi "><br><br>
+        <input type="submit " value="Calculate Sensitivity ">
     </form>
+    <br><br>
+    <p id="outputSensitivity ">Sensitivity</p>
 </body>
 
 </html>

@@ -2,11 +2,47 @@
 
 h1 {
     text-align: center;
+    color: oldlace;
 }
 
-a {
+p {
+    color: oldlace;
+}
+
+a:link {
+    height: 24px;
+    color: #dfe2df;
+    background-color: #4CAF50;
+    padding: 10px;
+    font-size: 16px;
+    margin: 12px;
+    border: none;
+    text-decoration: none;
+}
+
+a:visited {
+    height: 24px;
+    color: #dfe2df;
+    background-color: #4CAF50;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+}
+
+.topLink {
+    color: rgb(166, 190, 235);
     text-align: center;
-    color: cornflowerblue;
+    padding: 20px;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(44, 51, 70);
+}
+
+label {
+    color: oldlace;
 }
 
 
